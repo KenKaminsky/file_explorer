@@ -1525,6 +1525,11 @@
     "@react-spring/core" "9.0.0-rc.3"
     "@react-spring/shared" "9.0.0-rc.3"
 
+"@react-spring/mock-raf@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@react-spring/mock-raf/-/mock-raf-1.1.1.tgz#f3d9e17a8c973c8ce286571f1edd63a80414fe5d"
+  integrity sha512-SPgq9cenqdkqzxg1zYKEOkao5Boob2sG8QTxiSoHT7NyZoTZKnDcalvRtW9AmZBcbUHy8UtqCKfBWKyB2PSlmQ==
+
 "@react-spring/native@9.0.0-rc.3":
   version "9.0.0-rc.3"
   resolved "https://registry.yarnpkg.com/@react-spring/native/-/native-9.0.0-rc.3.tgz#863b8278ea6064385c4fffaaed40316e4a2acaa8"
