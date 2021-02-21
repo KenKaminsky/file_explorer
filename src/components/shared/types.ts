@@ -2,11 +2,11 @@ export interface IData {
   id: string;
 }
 
-export interface IFolders {
-  [key: string]: IFolder;
+export interface IBranches {
+  [key: string]: IRoot;
 }
 
-export interface IFolder extends IData {
+export interface IRoot extends IData {
   display?: string;
-  subFolders: IFolders;
+  branches: IBranches;
 }

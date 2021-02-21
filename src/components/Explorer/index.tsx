@@ -1,24 +1,20 @@
-import React from 'react';
-import data from '../data';
-import { Folder } from '../Folder';
-import { List } from '../shared/styles';
-import { parseURNs } from './parser';
+import React, { useMemo } from 'react';
+import { Tree } from '../Tree';
+import { TreeContainer } from '../shared/styles';
+import { buildTree } from '../parser';
+import { IData } from '../shared/types';
 
-// |--urn
-// |--|--intuit
-// |--|--|--customersuccess
-// |--|--|--|--customer360
-// |--|--|--|--|--CSGoldCompany
-// |--|--|--|--|--CSGoldPerson
-// ...
+interface IFileExplorer {
+  data: IData[];
+}
 
-const FileExplorer = () => {
-  const root = parseURNs(data);
+const FileExplorer: React.FC<IFileExplorer> = ({ data }) => {
+  const root = useMemo(() => buildTree(data), [data]);
 
   return (
-    <List>
-      <Folder {...root} defaultOpen={true} />
-    </List>
+    <TreeContainer>
+      <Tree {...root} defaultOpen={true} />
+    </TreeContainer>
   );
 };
 

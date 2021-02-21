@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { animated } from 'react-spring';
 
-export const FolderContainer = styled.li`
+export const BranchContainer = styled.li`
   position: relative;
   padding: 10px 0px 0px 0px;
   text-overflow: ellipsis;

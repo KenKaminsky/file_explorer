@@ -1,4 +1,6 @@
-const data = [
+import { IData } from './types';
+
+const data: IData[] = [
   {
     id: 'urn:intuit:sales:salesnavigator:company',
   },
